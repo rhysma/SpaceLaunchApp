@@ -23,6 +23,7 @@ namespace SpaceXApp
         {
             base.OnCreate(savedInstanceState, persistentState);
             Log.Debug(TAG, "SplashActivity.OnCreate");
+            
         }
 
         protected override void OnResume()
@@ -34,6 +35,8 @@ namespace SpaceXApp
                 Log.Debug(TAG, "Performing some startup work that takes a bit of time.");
                 Task.Delay(5000);  // Simulate a bit of startup work.
                 Log.Debug(TAG, "Working in the background - important stuff.");
+                
+
             });
 
             startupWork.ContinueWith(t =>

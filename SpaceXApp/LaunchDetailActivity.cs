@@ -14,7 +14,7 @@ using System.Net;
 
 namespace SpaceXApp
 {
-    [Activity(Label = "LaunchDetailActivity")]
+    [Activity(Label = "LaunchDetailActivity", Theme = "@style/MyTheme")]
     public class LaunchDetailActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

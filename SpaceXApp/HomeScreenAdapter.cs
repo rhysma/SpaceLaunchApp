@@ -46,6 +46,7 @@ namespace SpaceXApp
             { // otherwise create a new one
                 view = context.LayoutInflater.Inflate(Android.Resource.Layout.SimpleListItem2, null);
             }
+            
             view.FindViewById<TextView>(Android.Resource.Id.Text1).Text = items[position].ToString();
             return view;
         }

@@ -16,7 +16,7 @@ using System.Collections.Generic;
 
 namespace SpaceXApp
 {
-    [Activity(Label = "SpaceLaunchApp", Icon = "@drawable/splash_logo")]
+    [Activity(Label = "SpaceLaunchApp", Icon = "@drawable/splash_logo", Theme = "@style/MyTheme")]
     public class MainActivity : ListActivity
     {
         public List<Launch> Items { get; set; }
@@ -24,9 +24,8 @@ namespace SpaceXApp
         protected async override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-
-            //remove the action bar from the top
-            ActionBar.Hide();
+            Toast toast = Toast.MakeText(this, String.Format("Getting Next 10 Launches..."), ToastLength.Short);
+            toast.Show();
 
             //initialize the list
             Items = new List<Launch>();
