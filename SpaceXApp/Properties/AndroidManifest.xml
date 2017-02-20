@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="SpaceXApp.SpaceXApp" android:versionCode="1" android:versionName="1.0">
-	<uses-sdk android:minSdkVersion="16" />
-	<application android:label="SpaceLaunchApp"></application>
-	<application android:theme="@android:style/Theme.DeviceDefault.Light" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="SpaceXApp.SpaceXApp" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="23" android:targetSdkVersion="23" />
+	<application android:label="SpaceLaunchApp" android:icon="@drawable/splash_logo"></application>
+	<application android:theme="@style/MyTheme" />
 	<uses-permission android:name="android.permission.INTERNET" />
 </manifest>

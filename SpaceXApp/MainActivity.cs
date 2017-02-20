@@ -16,7 +16,7 @@ using System.Collections.Generic;
 
 namespace SpaceXApp
 {
-    [Activity(Label = "SpaceLaunchApp", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "SpaceLaunchApp", Icon = "@drawable/splash_logo")]
     public class MainActivity : ListActivity
     {
         public List<Launch> Items { get; set; }
