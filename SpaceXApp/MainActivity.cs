@@ -35,7 +35,7 @@ namespace SpaceXApp
             HttpClient client = new HttpClient();
             
             //this is the url to the API for the next 5 launches
-            client.BaseAddress = new Uri("https://launchlibrary.net/1.2/launch/next/5");
+            client.BaseAddress = new Uri("https://launchlibrary.net/1.2/launch/next/10");
 
             //adding default headers for the request
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));//ACCEPT header
@@ -75,8 +75,18 @@ namespace SpaceXApp
 
         protected override void OnListItemClick(ListView l, View v, int position, long id)
         {
-            var t = Items[position];
-            //Console.WriteLine("Clicked on " + t);
+            //when they click on an item in the list
+            //pass over the object data and start the Launch Detail Activity to 
+            //display the information
+            Launch t = Items[position];
+            var launchActivity = new Intent(this, typeof(LaunchDetailActivity));
+            launchActivity.PutExtra("name", t.name);
+            launchActivity.PutExtra("status", t.status);
+            launchActivity.PutExtra("start", t.windowstart);
+            launchActivity.PutExtra("end", t.windowend);
+            launchActivity.PutExtra("location", t.location.name);
+            launchActivity.PutExtra("rocketImg", t.rocket.imageURL);
+            StartActivity(launchActivity);
         }
     }
 }

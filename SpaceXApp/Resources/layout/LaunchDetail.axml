@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Launch Detail"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_marginBottom="30px" />
+    <TextView
+        android:text="Name: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_marginBottom="10px"
+        android:layout_marginLeft="10px" />
+    <TextView
+        android:text="Status: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/status"
+        android:layout_marginBottom="10px"
+        android:layout_marginLeft="10px" />
+    <TextView
+        android:text="Window Start: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/windowStart"
+        android:layout_marginBottom="10px"
+        android:layout_marginLeft="10px" />
+    <TextView
+        android:text="Window End: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/windowEnd"
+        android:layout_marginBottom="10px"
+        android:layout_marginLeft="10px" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/location"
+        android:text="Location: "
+        android:layout_marginBottom="10px"
+        android:layout_marginLeft="10px" />
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rocketImg" />
+</LinearLayout>
