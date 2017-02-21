@@ -57,7 +57,7 @@ namespace SpaceXApp
 
         public override string ToString()
         {
-            return name + " - Window starts: " + windowstart;
+            return name;
         }
     }
 

@@ -16,7 +16,7 @@ using System.Collections.Generic;
 
 namespace SpaceXApp
 {
-    [Activity(Label = "SpaceLaunchApp", Icon = "@drawable/splash_logo", Theme = "@style/MyTheme")]
+    [Activity(Label = "Space Launch App", Icon = "@drawable/splash_logo", Theme = "@style/MyTheme")]
     public class MainActivity : ListActivity
     {
         public List<Launch> Items { get; set; }
@@ -27,7 +27,7 @@ namespace SpaceXApp
             Toast toast = Toast.MakeText(this, String.Format("Getting Next 10 Launches..."), ToastLength.Short);
             toast.Show();
 
-            //initialize the list
+            //initialize the lists
             Items = new List<Launch>();
 
             //setup the client that will get our data
@@ -48,6 +48,12 @@ namespace SpaceXApp
         }
 
 
+        /// <summary>
+        ///get the list of launch items and agencies from the API and add them to the list
+        ///we will use in the UI
+        /// </summary>
+        /// <param name="client"></param>
+        /// <returns></returns>
         public async Task<List<Launch>> getRestData(HttpClient client)
         {
             try
@@ -62,6 +68,7 @@ namespace SpaceXApp
                     {
                         Items.Add(item);
                     }
+
                 }
             }
             catch (Exception ex)
@@ -72,10 +79,17 @@ namespace SpaceXApp
             return Items;
         }
 
+        /// <summary>
+        /// called when the user clicks on an item in the listivew
+        /// </summary>
+        /// <param name="l"></param>
+        /// <param name="v"></param>
+        /// <param name="position"></param>
+        /// <param name="id"></param>
         protected override void OnListItemClick(ListView l, View v, int position, long id)
         {
             //when they click on an item in the list
-            //pass over the object data and start the Launch Detail Activity to 
+            //pass over the object data and start the LaunchDetailActivity to 
             //display the information
             Launch t = Items[position];
             var launchActivity = new Intent(this, typeof(LaunchDetailActivity));

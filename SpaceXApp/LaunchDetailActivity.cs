@@ -24,9 +24,6 @@ namespace SpaceXApp
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.LaunchDetail);
 
-            //remove the action bar from the top
-            ActionBar.Hide();
-
             //get the controls we want to put information into
             TextView nameText = (TextView)FindViewById(Resource.Id.name);
             TextView statusText = (TextView)FindViewById(Resource.Id.status);
