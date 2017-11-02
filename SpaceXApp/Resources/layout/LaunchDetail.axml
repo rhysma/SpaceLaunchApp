@@ -50,6 +50,11 @@
         android:text="Location: "
         android:layout_marginBottom="10px"
         android:layout_marginLeft="10px" />
+    <Button
+        android:text="Set Calendar Reminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/calendarEvent" />
     <ImageView
         android:src="@android:drawable/ic_menu_gallery"
         android:layout_width="match_parent"

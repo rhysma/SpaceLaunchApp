@@ -11,12 +11,17 @@ using Android.Views;
 using Android.Widget;
 using Android.Graphics;
 using System.Net;
+using Android.Provider;
+using Java.Util;
 
 namespace SpaceXApp
 {
     [Activity(Label = "LaunchDetailActivity", Theme = "@style/MyTheme")]
     public class LaunchDetailActivity : Activity
     {
+        //id for calendar event
+        int calID;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -62,6 +67,26 @@ namespace SpaceXApp
             location.Text = Intent.GetStringExtra("location") ?? "Data not available";
             var image = GetImageBitmapFromUrl(Intent.GetStringExtra("rocketImg"));
             rocketImg.SetImageBitmap(image);
+
+            //get the button for creating the calendar event
+            Button calendarEvent = (Button)FindViewById(Resource.Id.calendarEvent);
+
+            //click action to perform when the button is clicked
+            calendarEvent.Click += (object sender, EventArgs e) =>
+            {
+                ContentValues eventValues = new ContentValues();
+                eventValues.Put(CalendarContract.Events.InterfaceConsts.CalendarId, calID);
+                eventValues.Put(CalendarContract.Events.InterfaceConsts.Title, nameText.Text);
+                eventValues.Put(CalendarContract.Events.InterfaceConsts.Description, "Launch Event");
+                eventValues.Put(CalendarContract.Events.InterfaceConsts.Dtstart, GetDateTimeMS(2017, 12, 15, 10, 0));
+                eventValues.Put(CalendarContract.Events.InterfaceConsts.Dtend, GetDateTimeMS(2017, 12, 15, 11, 0));
+
+                eventValues.Put(CalendarContract.Events.InterfaceConsts.EventTimezone, "UTC");
+                eventValues.Put(CalendarContract.Events.InterfaceConsts.EventEndTimezone, "UTC");
+                var uri = ContentResolver.Insert(CalendarContract.Events.ContentUri, eventValues);
+                Console.WriteLine("Uri for new event: {0}", uri);
+            };
+
         }
 
         private Bitmap GetImageBitmapFromUrl(string url)
@@ -79,5 +104,19 @@ namespace SpaceXApp
 
             return imageBitmap;
         }
+
+        long GetDateTimeMS(int yr, int month, int day, int hr, int min)
+        {
+            Calendar c = Calendar.GetInstance(Java.Util.TimeZone.Default);
+
+            c.Set(Calendar.DayOfMonth, 15);
+            c.Set(Calendar.HourOfDay, hr);
+            c.Set(Calendar.Minute, min);
+            c.Set(Calendar.Month, Calendar.December);
+            c.Set(Calendar.Year, 2011);
+
+            return c.TimeInMillis;
+        }
+
     }
 }
