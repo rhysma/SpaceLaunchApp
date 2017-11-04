@@ -98,6 +98,7 @@ namespace SpaceXApp
             launchActivity.PutExtra("start", t.windowstart);
             launchActivity.PutExtra("end", t.windowend);
             launchActivity.PutExtra("location", t.location.name);
+            launchActivity.PutExtra("url", t.vidURLs[0]);
             launchActivity.PutExtra("rocketImg", t.rocket.imageURL);
             StartActivity(launchActivity);
         }

@@ -1360,14 +1360,14 @@ namespace SpaceXApp
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0b0057
-			public const int AgencyImage = 2131427415;
-			
 			// aapt resource value: 0x7f0b0058
-			public const int LaunchInfo = 2131427416;
+			public const int AgencyImage = 2131427416;
 			
-			// aapt resource value: 0x7f0b005a
-			public const int action0 = 2131427418;
+			// aapt resource value: 0x7f0b0059
+			public const int LaunchInfo = 2131427417;
+			
+			// aapt resource value: 0x7f0b005b
+			public const int action0 = 2131427419;
 			
 			// aapt resource value: 0x7f0b0040
 			public const int action_bar = 2131427392;
@@ -1393,8 +1393,8 @@ namespace SpaceXApp
 			// aapt resource value: 0x7f0b0041
 			public const int action_context_bar = 2131427393;
 			
-			// aapt resource value: 0x7f0b005e
-			public const int action_divider = 2131427422;
+			// aapt resource value: 0x7f0b005f
+			public const int action_divider = 2131427423;
 			
 			// aapt resource value: 0x7f0b0002
 			public const int action_menu_divider = 2131427330;
@@ -1426,17 +1426,17 @@ namespace SpaceXApp
 			// aapt resource value: 0x7f0b0036
 			public const int buttonPanel = 2131427382;
 			
-			// aapt resource value: 0x7f0b0055
-			public const int calendarEvent = 2131427413;
+			// aapt resource value: 0x7f0b0056
+			public const int calendarEvent = 2131427414;
 			
-			// aapt resource value: 0x7f0b005b
-			public const int cancel_action = 2131427419;
+			// aapt resource value: 0x7f0b005c
+			public const int cancel_action = 2131427420;
 			
 			// aapt resource value: 0x7f0b0038
 			public const int checkbox = 2131427384;
 			
-			// aapt resource value: 0x7f0b0061
-			public const int chronometer = 2131427425;
+			// aapt resource value: 0x7f0b0062
+			public const int chronometer = 2131427426;
 			
 			// aapt resource value: 0x7f0b0017
 			public const int collapseActionView = 2131427351;
@@ -1471,8 +1471,8 @@ namespace SpaceXApp
 			// aapt resource value: 0x7f0b0014
 			public const int end = 2131427348;
 			
-			// aapt resource value: 0x7f0b0066
-			public const int end_padder = 2131427430;
+			// aapt resource value: 0x7f0b0067
+			public const int end_padder = 2131427431;
 			
 			// aapt resource value: 0x7f0b0027
 			public const int expand_activities_button = 2131427367;
@@ -1495,20 +1495,20 @@ namespace SpaceXApp
 			// aapt resource value: 0x7f0b0028
 			public const int image = 2131427368;
 			
-			// aapt resource value: 0x7f0b0065
-			public const int info = 2131427429;
+			// aapt resource value: 0x7f0b0066
+			public const int info = 2131427430;
 			
-			// aapt resource value: 0x7f0b005f
-			public const int line1 = 2131427423;
+			// aapt resource value: 0x7f0b0060
+			public const int line1 = 2131427424;
 			
-			// aapt resource value: 0x7f0b0063
-			public const int line3 = 2131427427;
+			// aapt resource value: 0x7f0b0064
+			public const int line3 = 2131427428;
 			
 			// aapt resource value: 0x7f0b0009
 			public const int listMode = 2131427337;
 			
-			// aapt resource value: 0x7f0b0059
-			public const int listView1 = 2131427417;
+			// aapt resource value: 0x7f0b005a
+			public const int listView1 = 2131427418;
 			
 			// aapt resource value: 0x7f0b002a
 			public const int list_item = 2131427370;
@@ -1516,8 +1516,8 @@ namespace SpaceXApp
 			// aapt resource value: 0x7f0b0054
 			public const int location = 2131427412;
 			
-			// aapt resource value: 0x7f0b005d
-			public const int media_actions = 2131427421;
+			// aapt resource value: 0x7f0b005e
+			public const int media_actions = 2131427422;
 			
 			// aapt resource value: 0x7f0b0015
 			public const int middle = 2131427349;
@@ -1549,8 +1549,8 @@ namespace SpaceXApp
 			// aapt resource value: 0x7f0b003a
 			public const int radio = 2131427386;
 			
-			// aapt resource value: 0x7f0b0056
-			public const int rocketImg = 2131427414;
+			// aapt resource value: 0x7f0b0057
+			public const int rocketImg = 2131427415;
 			
 			// aapt resource value: 0x7f0b001f
 			public const int screen = 2131427359;
@@ -1618,8 +1618,8 @@ namespace SpaceXApp
 			// aapt resource value: 0x7f0b0051
 			public const int status = 2131427409;
 			
-			// aapt resource value: 0x7f0b005c
-			public const int status_bar_latest_event_content = 2131427420;
+			// aapt resource value: 0x7f0b005d
+			public const int status_bar_latest_event_content = 2131427421;
 			
 			// aapt resource value: 0x7f0b004b
 			public const int submit_area = 2131427403;
@@ -1627,11 +1627,11 @@ namespace SpaceXApp
 			// aapt resource value: 0x7f0b000b
 			public const int tabMode = 2131427339;
 			
-			// aapt resource value: 0x7f0b0064
-			public const int text = 2131427428;
+			// aapt resource value: 0x7f0b0065
+			public const int text = 2131427429;
 			
-			// aapt resource value: 0x7f0b0062
-			public const int text2 = 2131427426;
+			// aapt resource value: 0x7f0b0063
+			public const int text2 = 2131427427;
 			
 			// aapt resource value: 0x7f0b0033
 			public const int textSpacerNoButtons = 2131427379;
@@ -1639,8 +1639,8 @@ namespace SpaceXApp
 			// aapt resource value: 0x7f0b004f
 			public const int textView1 = 2131427407;
 			
-			// aapt resource value: 0x7f0b0060
-			public const int time = 2131427424;
+			// aapt resource value: 0x7f0b0061
+			public const int time = 2131427425;
 			
 			// aapt resource value: 0x7f0b002c
 			public const int title = 2131427372;
@@ -1656,6 +1656,9 @@ namespace SpaceXApp
 			
 			// aapt resource value: 0x7f0b0012
 			public const int useLogo = 2131427346;
+			
+			// aapt resource value: 0x7f0b0055
+			public const int watchLive = 2131427413;
 			
 			// aapt resource value: 0x7f0b0053
 			public const int windowEnd = 2131427411;

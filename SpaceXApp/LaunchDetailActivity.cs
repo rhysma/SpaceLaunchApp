@@ -35,6 +35,7 @@ namespace SpaceXApp
             TextView startText = (TextView)FindViewById(Resource.Id.windowStart);
             TextView endText = (TextView)FindViewById(Resource.Id.windowEnd);
             TextView location = (TextView)FindViewById(Resource.Id.location);
+            TextView url = (TextView)FindViewById(Resource.Id.watchLive);
             ImageView rocketImg = (ImageView)FindViewById(Resource.Id.rocketImg);
 
             //get the information that was passed over
@@ -64,7 +65,8 @@ namespace SpaceXApp
             }
             startText.Text += Intent.GetStringExtra("start") ?? "Data not available";
             endText.Text += Intent.GetStringExtra("end") ?? "Data not available";
-            location.Text = Intent.GetStringExtra("location") ?? "Data not available";
+            location.Text += Intent.GetStringExtra("location") ?? "Data not available";
+            url.Text += Intent.GetStringExtra("url") ?? "No URL Available";
             var image = GetImageBitmapFromUrl(Intent.GetStringExtra("rocketImg"));
             rocketImg.SetImageBitmap(image);
 
@@ -72,6 +74,7 @@ namespace SpaceXApp
             Button calendarEvent = (Button)FindViewById(Resource.Id.calendarEvent);
 
             //click action to perform when the button is clicked
+            //currently a work in progress
             calendarEvent.Click += (object sender, EventArgs e) =>
             {
                 ContentValues eventValues = new ContentValues();

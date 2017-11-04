@@ -50,6 +50,14 @@
         android:text="Location: "
         android:layout_marginBottom="10px"
         android:layout_marginLeft="10px" />
+    <TextView
+        android:text=" Watch Live: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/watchLive"
+        android:clickable="true"
+        android:autoLink="web" />
     <Button
         android:text="Set Calendar Reminder"
         android:layout_width="match_parent"
